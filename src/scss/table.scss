@@ -1,0 +1,78 @@
+.excel__table{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: $header-height + $toolbar-height + $formula-height;
+  overflow: auto;
+  padding-bottom: 2px;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+   border: 1px solid $border-color
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #dadce0;
+    border-radius: 5px;
+  }
+
+
+  .row{
+    display: flex;
+    flex-direction: row;
+    min-height: 20px;
+    height: $row-height;
+
+  }
+
+  .row-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: $info-cell-width;
+    height: 100%;
+    border: 1px solid $border-color;
+    background-color: #f8f9fa;
+    border-top: 0
+  }
+
+  .row-data{
+    display: flex;
+  }
+
+  .column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    min-width: 40px;
+    width: $cell-width;
+    border: 1px solid $border-color;
+    height: 100%;
+    border-top: 0;
+    border-left: 0;
+  }
+
+  .cell{
+    min-width: 40px;
+    padding: 5px;
+    width: $cell-width;
+    border: 1px solid #e2e3e3;
+    height: 100%;
+    border-top: 0;
+    border-left: 0;
+    color: #111;
+    white-space: nowrap;
+    outline: none;
+
+    &.selected{
+      border: 0;
+      outline: 2px solid $primary_color;
+      z-index: 2;
+    }
+  }
+}

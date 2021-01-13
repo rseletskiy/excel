@@ -1,0 +1,57 @@
+.excel__header {
+  padding: 10px 15px;
+  height: $header-height;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & button{
+    @include iconButton($primary_color)
+  }
+}
+
+.btn-group {
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+
+  svg {
+    width: 30px;
+    height: auto;
+    margin-right: 20px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+}
+
+.table-name {
+  display: flex;
+  align-items: center;
+
+  svg {
+    width: 30px;
+    height: auto;
+    margin-right: 20px;
+  }
+
+  input {
+    border: none;
+    background: transparent;
+    outline: none !important;
+    padding: 10px 0;
+    font-size: 20px;
+  }
+}
+
+
+
