@@ -1,0 +1,32 @@
+@mixin iconButton($color: green){
+  height: 36px;
+  min-width: 36px;
+  text-align: center;
+  background: none;
+  border:none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  outline: none;
+
+  & > i {
+    color: $color;
+    font-size: 18px;
+  }
+
+  &:hover{
+    background: rgba(0,0,0,0.05);
+  }
+
+  &:active{
+    box-shadow: 0 0 3px rgba(0,0,0, .2);
+  }
+}
+
+@mixin clearList(){
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
