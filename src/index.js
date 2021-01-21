@@ -9,4 +9,5 @@ const spreadsheet = new Spreadsheet('#app', {
   components: [Header, Toolbar, Formula, Table]
 })
 
-spreadsheet.render()
+spreadsheet.render();
+
