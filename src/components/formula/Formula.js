@@ -6,7 +6,7 @@ export class Formula extends SpreadsheetComponent {
   constructor($root) {
     super($root, {
       name: 'Formula',
-      listeners: ['input']
+      listeners: ['input', 'click']
     });
   }
 
@@ -19,6 +19,10 @@ export class Formula extends SpreadsheetComponent {
   }
 
   onInput(event) {
-    console.log('On input Formula', event);
+    console.log('OnInput Formula', event);
+  }
+
+  onClick(event) {
+    console.log('OnClick Formula', event);
   }
 }
