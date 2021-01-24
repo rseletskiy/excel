@@ -14,4 +14,8 @@ export class SpreadsheetComponent extends DOMListener {
   init() {
     this.initDomListeners();
   }
+
+  destroy() {
+    this.removeDomListeners();
+  }
 }
